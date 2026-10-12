@@ -1,6 +1,5 @@
 # OAF 代码包
 
-从本次完整交付包提取的训练、评价及绘图代码。 原目录关系保留，训练实现没有改写。
 
 ## 目录与入口
 
@@ -49,9 +48,3 @@ python plotting/START.py
 ```bash
 python project/START.py
 ```
-
-**仅解压代码包不能直接得到结果，需要先恢复数据。** `RESTORE_DATA.py` 只复制输入和保存结果，不训练模型。重训需时较长；本次打包没有重新拟合模型。原入口可能自动安装缺失依赖。
-
-未使用完整包时，需自行提供相同格式的 `patients.csv`、`events.csv`、`landmarks.csv`、`xuhui_folds.csv`，以及代码依赖的 `reference_folds.csv`；复核与绘图还需要对应预测/汇总文件。不要用其他队列的划分替换论文冻结划分。
-
-本次检查：所有 Python 文件通过语法解析，压缩包完整性通过；未逐一重跑训练流程。
